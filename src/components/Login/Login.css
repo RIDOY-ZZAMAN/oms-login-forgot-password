@@ -1,0 +1,185 @@
+.login-page{
+    position: relative;
+  
+}
+
+.login-background{
+    width: 100vw;
+    display: flex;
+}
+
+.left-background{
+  width: 70vw;
+  background-image: url('../../images/login.jpg');
+  background-repeat: no-repeat;
+  background-size: 70vw 100vh;
+  height: 100vh;
+  color: rgb(155, 154, 154);
+  position: relative;
+  
+}
+.oms-logo{
+    margin: 40px 0 0 80px;
+}
+.footer{
+    position: absolute;
+    bottom: 20px;
+    font-weight: 300;
+    width: 70vw;
+
+
+}
+
+.oms-use-link > a{
+    color: rgb(214, 211, 211);
+}
+
+.footer-items{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 45px;
+    border-bottom: 1px solid gray;
+    padding: 15px 0;
+}
+
+
+
+.footer-links > a{
+    text-decoration: none;
+    color: rgb(155, 154, 154);
+    
+} 
+
+.middle-link{
+    margin: 0 20px;
+}
+
+.copy-right-text{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+.important{
+    margin: 0 0;
+    color: red;
+}
+.right-background{
+   width: 30vw;
+   background-image: url('../../images/right.jpg');
+   background-repeat: no-repeat;
+   background-size: 30vw 100vh;
+}
+
+.login-container{
+    position: absolute;
+    top:80px;
+    right: 165px;
+    
+    width: 400px;
+    height: 420px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px 45px;
+
+}
+
+.login-container h1{
+    color: #09D0A7;
+    font-size: 35px;
+    font-weight: 400;
+    
+}
+
+.login-container p{
+  
+    font-size: 20px;
+    font-weight: 300;
+   
+    
+}
+
+.user-name,.password{
+    margin-top: 20px;
+}
+
+
+.user-name-box, .password-box{
+    width: 87%;
+    height: 15px;
+    background-color: white;
+    border: 1px solid rgb(206, 194, 253);
+  
+    display: flex;
+    align-items: center;
+    padding:20px;
+    margin-top: 5px;
+    border-left: 7px solid #09D0A7;
+  
+    border-image-slice: 1;
+    border-radius: 5px;
+}
+
+.login-page-icon{
+    
+    margin-right: 10px;
+}
+
+.user-name-box> input{
+    flex: 1;
+    height: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.password-box>input{
+    flex: 1;
+    height: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+button{
+    width: 99%;
+    height: 55px;
+    background-color: #09D0A7;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 25px;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.forgot-remember{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.forgot-remember > a{
+    color: black;
+}
+
+
+
+.rememberme-text{
+    margin: 0;
+    color: #09D0A7;
+}
+
+
+.register{
+    text-align: center;
+    margin-top: 15px;
+    color: #4E4E4E;
+}
+
+.register-link{
+    color: #09D0A7;
+}
