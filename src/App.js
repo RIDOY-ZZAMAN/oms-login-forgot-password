@@ -13,10 +13,10 @@ function App() {
       <BrowserRouter>
 
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route exact path="/" element={<Login />} />
         </Routes>
         <Routes>
-          <Route path="/forgotpassword" element={<ForgotPassword />} />
+          <Route exact path="/forgotpassword" element={<ForgotPassword />} />
         </Routes>
 
       </BrowserRouter>
