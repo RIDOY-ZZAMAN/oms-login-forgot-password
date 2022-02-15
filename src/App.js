@@ -6,6 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import ForgotPassword from './components/ForgotPassword/ForgotPassword';
+import ChangePassword from './components/ChangePassword/ChangePassword';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         </Routes>
         <Routes>
           <Route exact path="/forgotpassword" element={<ForgotPassword />} />
+        </Routes>
+        <Routes>
+          <Route exact path="/changepassword" element={<ChangePassword />} />
         </Routes>
 
       </BrowserRouter>

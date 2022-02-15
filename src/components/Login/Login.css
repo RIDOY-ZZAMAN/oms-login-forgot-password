@@ -77,7 +77,7 @@
     right: 165px;
     
     width: 400px;
-    height: 420px;
+    height: 430px;
     background-color: white;
     border-radius: 10px;
     padding: 25px 45px;
@@ -164,6 +164,13 @@ button{
 
 .forgot-remember > a{
     color: black;
+}
+.change-password{
+    margin-top: 2px;
+}
+ .change-password > a{
+    color: black;
+   
 }
 
 

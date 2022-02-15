@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './ForgotPassword.css';
+import './ChangePassword.css';
 import oms from '../../images/oms.png';
-import email from '../../images/email.png';
+import key from '../../images/key.png';
 import leftArrow from '../../images/leftarrow.png';
 
-
-const ForgotPassword = () => {
+const ChangePassword = () => {
     return (
-        <div className='forgotPassword-page'>
-            <div className='forgotPassword-background'>
-                <div className="forgotPassword-left-background">
+        <div className='changePassword-page'>
+            <div className='changePassword-background'>
+                <div className="changePassword-left-background">
                     <img className='oms-logo' src={oms} alt="" />
                     <div className='footer'>
                         <div className='footer-items'>
@@ -26,34 +25,40 @@ const ForgotPassword = () => {
                         <p className='copy-right-text'>Aqgromalin Farmtech Services Private Limited &copy; 2022 | All right reserved</p>
                     </div>
                 </div>
-                <div className="forgotPassword-right-background">
+                <div className="changePassword-right-background">
                 </div>
             </div>
 
-            <div className='forgotPassword-container'>
+            <div className='changePassword-container'>
                 <div>
-                    <h1>Forgot your password</h1>
-                    <p>Please enter the email address you'd like your Password reset information sent to</p>
+                    <h1>Change Password</h1>
                 </div>
-
                 <form action="">
-                    <div className='user-email'>
-                        <label htmlFor="">Enter email address <span className='important'>*</span></label>
-                        <div className='user-email-box'>
+                    <div className='user-new-password'>
+                        <label htmlFor="">Enter New Password <span className='important'>*</span></label>
+                        <div className='user-password-box'>
 
-                            <img className='forgotPassword-page-icon' src={email} alt="" />   <input type="email" placeholder='Enter your email id' />
+                            <img className='changePassword-page-icon' src={key} alt="" />   <input type="password" placeholder='Enter New Password' />
                         </div>
                     </div>
-                    <button type='submit'>Request reset link</button>
+                    <div className='user-confirm-password'>
+                        <label htmlFor="">Confirm Password <span className='important'>*</span></label> <br />
+                        <div className='user-password-box'>
+                            <img className='changePassword-page-icon' src={key} alt="" />
+                            <input type="password" placeholder='Enter Confirm Password' />
+                        </div>
+                    </div>
+                    <button type='submit'>Apply Changes</button>
                 </form>
                 <div className='back-to-home'>
                     <Link to={'/'}> <img src={leftArrow} alt="" /> Back To Login</Link>
                 </div>
-            </div>
 
+
+            </div>
 
         </div>
     );
 };
 
-export default ForgotPassword;
+export default ChangePassword;

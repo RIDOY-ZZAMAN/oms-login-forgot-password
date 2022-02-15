@@ -3,7 +3,7 @@ import './Login.css';
 import oms from '../../images/oms.png'
 import user from '../../images/user.png';
 import password from '../../images/password.png';
-import view from '../../images/eye.png'
+import view from '../../images/eye.png';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
@@ -59,6 +59,10 @@ const Login = () => {
                     <div>
                         <input type="checkbox" /> <span className='rememberme-text'>Remember Me</span>
                     </div>
+                </div>
+                <div className='change-password'>
+                    <Link to={'/changepassword'}>Change Password ?</Link>
+
                 </div>
                 <div className='register'>
                     <h4>Don't have an account? <Link className='register-link' to={'/#'}>Register</Link></h4>
